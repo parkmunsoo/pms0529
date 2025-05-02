@@ -2,6 +2,7 @@
 *.class
 bin/
 .gitignore/
+.metadata
 # Log file
 *.log
 
