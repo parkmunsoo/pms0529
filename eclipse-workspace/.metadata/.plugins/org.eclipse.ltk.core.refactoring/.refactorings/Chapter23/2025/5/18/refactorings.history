@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;Ex12_Unit.java&apos; to &apos;Chapter24&apos;&#x0D;&#x0A;- Original project: &apos;Chapter23&apos;&#x0D;&#x0A;- Destination element: &apos;Chapter24&apos;&#x0D;&#x0A;- Original element: &apos;pract_IO.Ex12_Unit.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Chapter24" element1="/src&lt;pract_IO{Ex12_Unit.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1746169583085" units="1" version="1.0"/>
-</session>
