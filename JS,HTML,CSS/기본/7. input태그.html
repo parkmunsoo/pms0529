@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT_TAG</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <input type="hidden" name="hidden" value="hiddenda">
+        <input type="text" name="id" >
+        <input type="submit" value="전송">
+    </form>
+    <!-- enctype="multipart/form-data" 파일지정형식 IN FORM IN BODY -->
+    <h1>회원 가입을 환영합니다</h1>
+    <fieldset>
+    <legend>여러가지폼과 그에대한 양식 </legend>
+    <fieldset>
+        <legend>파일지정과 전송</legend>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" multiple>
+        <button>전송</button>
+  </fieldset>
+    </form>
+    <fieldset>
+        <legend>날짜</legend>
+        <form action="#" method="GET">
+            <input type="time" name="tome">
+            <input type="datetime-local" name="datetime-local">
+            <input type="submit" value="전송">
+            <br>
+        <form action="#" method="GET">
+            <input type="date" name="date">
+            <input type="week" name="week">
+            <input type="month" name="month">
+            <input type="image" src="login.png" alt="로그인">
+    </fieldset>
+    </form> <br>
+    <!-- JS.f/opclick  -->
+     <!-- window.open : 파일을 새로운탭에열수있는기능 -->
+    <fieldset>
+        <legend>버튼</legend>
+    <input type="button" value="버튼1" onclick="window.open('index.html')">
+    <button type="button" onclick="window.open('index.html')"> 버튼2 </button>
+    <form action="#">
+        <input type="number" name= "num" min="2" max="10" step="2">
+        <input type="range" name= "ran" min="2" max="10" step="2">
+        <input type="submit" value="전송">
+        <!--로그인정보필드 in 중간필드 -->
+    </fieldset>
+        <fieldset>
+            <legend>사용자정보</legend>
+            <!-- ul구간 -->
+            <ul>
+                <li><label>아이디<input type="id" name="id"></label></li>
+                <li><label>이메일<input type="email" name="email"></label></li>
+                <li><label>비밀번호<input type="pw" name="pw"></label></li>
+                <li><label>비밀번호 확인<input type="pw" name="pw"></label> </li>
+            </ul>
+        </fieldset>
+        <!-- 메일_체크박스 in 하단필드 -->
+        <fieldset>
+            <legend>이벤트와 새로운소식</legend>
+            <label><input type="radio" name="mail" value="yes">메일수신</label>
+            <label><input type="radio" name="mail" value="no">메일수신안함</label>
+        </fieldset>
+        <!-- 버튼 in 최하단필드-->
+        <input type="submit" value="가입하기">
+        <input type="submit" value="취소">
+    </form>
+    <form action="#" method="POST">
+        <!--  insert del_button in search_BOX -->
+        <input type="search" name="search"><br>
+        <!-- URL작성 형식이 맞지않을시 에러메세지출력 -->
+        <input type="url" name="url">   <br>
+        <!-- EMAIL작성 형식이 맞지않을시 에러메세지출력 -->
+        <input type="email" name="email"><br>
+        <!-- TEL작성 형식이 맞지않을시 에러메세지출력 -->
+        <input type="tel" name="tel"><br>
+        <!-- FORM내용을 전송할수있는타입 -->
+        <input type="submit" value="전송"></form>
+        <form action="#" method="POST">
+            <!--  -->
+            <!-- label과 checkbox사이 텍스트기입 -->
+             <!-- valUE속성 : 체크가되었다면  Value에 해당하는값을 전송함 -->
+         <form action="#" method="POST">
+            <!-- radio_tag : 둘이상의 선택목록에 하나만선택해야할경우 -->
+             <label>선물포장<input type="radio" name="gift" value="yes"></label>
+             <label>일반포장<input type="radio" name="gift" value="no"></label>
+             <input type="submit" value="전송"></form>
+        </form>
+            선물용3kg<input type="checkbox" name="cheak0">
+            <label>선물용3kg<input type="checkbox" name="cheak1"value="c1"></label>
+            <label>선물용5kg<input type="checkbox" name="cheak2"value="c2"></label>
+            <label>가정용3kg<input type="checkbox" name="cheak3" value="c3"></label>
+            <label>가정용5kg<input type="checkbox" name="cheak4" value="c4"></label>
+            <input type="submit" value="전송"></form>
+        </form>
+    </fieldset>
+</body></html>

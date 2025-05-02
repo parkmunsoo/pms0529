@@ -1,0 +1,26 @@
+package pract_IO;
+
+public class prct1 {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//1. gugudan.txt 파일에 1단부터9단까지의 구구단을 출력해보자
+//2. year.txt파일에 1900부터 2025까지의 윤년을 출력하자
+//3.
+		
+		
+		for(int i =0; i<=9; i++)
+		{
+			System.out.println(i + "단의");}
+			for(int j= j;j<=9; j++) {
+				System.out.print(j+1+ "*" + i + "=" + (j+1)*i + " ");
+			}
+		}
+
+	//write(file) 하고 read(file) 하자
+	
+	}
+
+}

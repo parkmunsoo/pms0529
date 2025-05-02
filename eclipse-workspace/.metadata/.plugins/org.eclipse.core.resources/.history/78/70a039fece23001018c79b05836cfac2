@@ -1,0 +1,61 @@
+package Chapter23;
+import java.util.*;
+
+import chapter18.Machine2; 
+
+public class Ex01_ {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성
+		
+		float Input_data = sc.nextFloat();
+		List<String> list = new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		list.add("D");
+		list.add("E");
+
+		float A = 4.0f;
+		float B = 3.0f;
+		float C = 2.0f;
+		float D = 1.0f;
+		float E = 0.0f;
+		if(Input_data <= A){
+			System.out.println(list.get(0));
+
+		}
+
+		else if(Input_data <= B){
+			System.out.println(list.get(1));
+
+		}
+
+		else if(Input_data <= C){
+			System.out.println(list.get(2));
+
+		}
+
+		else if(Input_data <= D){
+			System.out.println(list.get(3));
+
+		}
+		else if(Input_data <= 5.0){
+			System.out.println("다시입력해주세요");
+
+		}
+		else{
+			System.out.println(list.get(4));
+			}
+
+
+		//1. 학점(‘A’, ‘B’, ‘C’, ‘D’, ‘F’)을 컬렉션에 저장하라. 그러고 나서 컬렉션을 검색하여 학점을 점수
+		//(A=4.0, B=3.0, C=2.0, D=1.0, F=0.0)로 변환하여 출력하는 프로그램을 작성하라. 
+		//
+		
+		//List<String> list2 = new LinkedList<>();
+	}
+
+}

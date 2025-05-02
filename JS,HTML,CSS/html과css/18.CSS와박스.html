@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p,h1,li{border: 1px solid black}
+        img,span,b,strong,i,em{border: 1px solid black;}
+        /* 내부를 경계의 태그에걸린 상수를 비율로가지려면 경계의 태그가 먼저설정되어야한다 */
+        .box0{height: 100px;;}
+        .box1{width: 400px; height: 100px;}
+        .box2{width: 50%; height: 100px;}
+    </style>
+</head>
+<body>
+
+
+
+    <!-- 서로구분되는 구간을만들며, 내부를담기위해 경계를설정-->
+     <div>블록레벨_div_의내부텍스트</div>
+     
+     <p>블록레벨_p의내부텍스트</p>
+     <p class="box0">클래스가_100px_블록레벨_p의내부텍스트</p>
+     <p class="box1">블록레벨_p의내부텍스트</p>
+     <p class="box2">블록레벨_p의내부텍스트</p>
+     <h1>블록레벨_h1의내부텍스트</h1>
+     <li>블록레벨_li의내부텍스트</li>
+     <!-- 인라인레벨태그 : img, sapn , b , strong -->
+      <!-- 인라인레벨태그는 명사처럼작동하는 요소들에게 대하여 형용사적 역할을한다 -->
+       <!--  경계로써의크기[콘텐츠 IN 패딩 IN 테두리 IN 마진] -->
+         <!--  -->
+      <img src="./folder/file_name.확장할속성" alt="">
+      <b>arg0</b>
+      <strong>arg1</strong>
+      <i>arg2</i>
+      <em>arg2<em>arg4</em>arg6</em>
+</body>
+</html>

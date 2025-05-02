@@ -1,0 +1,38 @@
+package Chapter23;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+class Student {
+
+	String name;
+	String depart;
+	int st_id;
+	Double grade;
+
+	public Student(String name, String depart, int st_id, Double grade) {
+		this.name = name; // KEY
+		this.depart = depart; // VALUE
+		this.st_id = st_id;// VALUE
+		this.grade = grade;// VALUE
+
+	}
+    @Override
+    public String toString() {
+        return 	"이름 : "	+ name +"학과: " + depart + ", 학생 ID: " + st_id + ", 학년: " + grade;
+    }
+}
+
+
+public class Q4_2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, Student> HashMap = new Student()<>;
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성
+
+
+	}
+}

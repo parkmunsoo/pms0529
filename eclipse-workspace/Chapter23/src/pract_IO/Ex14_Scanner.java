@@ -1,0 +1,65 @@
+package pract_IO;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Ex14_Scanner {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try(Scanner sc = new Scanner(new File("log.txt"))){
+			while(sc.hasNext()) {
+				System.out.println(sc.next());
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		try(Scanner sc = new Scanner(new File("year.txt"))){
+			while(sc.hasNext()) {
+				System.out.println(sc.nextInt());
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		try(Scanner sc = new Scanner(new File("filee.txt"))){
+			while(sc.hasNext()) {
+				String name = sc.next();
+				int age = sc.nextInt();
+				int toll = sc.nextInt();
+				int weight = sc.nextInt();
+				String location = sc.next();
+				Student s = new Student(name,age,toll,weight,location);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+
+class Student {
+	String name;
+	int age;
+	int toll;
+	int weight;
+	String location;
+	public Student(String name, int age, int toll, int weight, String location) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.toll = toll;
+		this.weight = weight;
+		this.location = location;
+	}
+	
+}
+
+
+
+
+
+
+

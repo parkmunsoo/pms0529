@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30. 함수 연습문제</title>
+</head>
+
+<body>
+    <script>
+        // (반지름)*(반지름)*(3.14)
+        // let ringharfline = input()
+        function f1(harfline) {
+            line = harfline * harfline
+            ring = line * 3.14
+            console.log(ring);
+        }
+        f1(10);
+
+
+
+        let arr = [5, 1, 3, 4, 6, 7,3];
+        console.log("asd", arr);
+        console.log("asd", arr.splice(2 ,3 ));
+
+        function max(arr) {
+            let n = arr.length - 1;
+            let m = 0;
+            while (n =! m) {
+                let arr_part_first = arr[m];
+                let arr_part_last = arr[n];
+                console.log(arr_part_first);
+                console.log(arr_part_last);
+                if (arr_part_first > arr_part_last) {
+                    arr.splice(arr[m] , arr_part_last)
+                }
+                else if (n >= m) {
+                    arr.splice(arr[n] , arr_part_first)
+                }
+                console.log("A" , arr);
+                n--;
+                m++;
+         
+            }
+
+            return arr;
+        }
+        max(arr)
+        console.log(arr)
+
+
+
+        let M1 =[]
+        let M2 =[]
+        let M3 =[]
+        function BMI(height,M){
+            let m1 
+            let m2
+            let m3
+            if(m1<14){
+                M1 = m1 +M1
+            }
+            else if(M3>27){
+                M3 = m3 + M3}
+            else{
+                M2 = m2 + M2   }
+            return console.log(M1,M2,M3)}
+        //     M3
+        //     if
+        //     elif
+        //     else
+        //     BMI = M/height **2;
+        //     console.log(`BMI수치는 ${BMI수치}, ${정상} 입니다.`);
+     
+
+
+        //bmi(height,M)
+        //BMI = M/height **2;
+        console(BMI(30 ,20))
+    </script>
+
+</body>
+
+</html>

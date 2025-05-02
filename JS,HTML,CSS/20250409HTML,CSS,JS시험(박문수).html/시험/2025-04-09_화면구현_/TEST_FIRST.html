@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ALL{position : fixed;
+            margin: 10px;
+            top: 50%;
+            left: 50%;
+            flex-direction: column;
+            transform: translate(-50% , -50%);
+        }
+        .LOGIN_text{
+            text-align:center;
+            font-size: 70px;
+            color:white ;
+            font-weight:bold ;
+
+        }
+        .box1{width: 1000px; height: 100px;
+            background-color: rgba(9, 7, 7, 0.741);
+            padding: 20px;
+            margin: 500px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-bottom:0px;
+            
+        } 
+        .box2{width: 1000px; height:370px;
+            padding: 20px;
+            background-color: rgba(212, 208, 208, 0.741);
+            margin: 0px 100px 200px 300px;
+            /* margin-top: 200px; */
+
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-inline:500px;
+        }
+        .box3{width: 800px; height: 300px;
+                        align-items: center;
+                        position : fixed;
+            background-color: rgba(250, 248, 248, 0.941);
+
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-inline:50px ;}
+
+
+        .login_BTN{
+            background-color:black ;
+            text-align: center;
+            width: 100px;
+            margin: 10px 10px 10px 600px ;
+            border-radius: 20%;
+        }
+        .login_BTN_TEXT{
+            color: white;
+            font-weight: 10px;
+            font-size: 15px;
+        }
+
+        .LOGIN_INPUT{width: 150px; height: 60px;margin: 30px 500px 30px 30px;}
+        .LOGIN_INPUT1{width: 150px; height: 60px; margin: 30px 500px 30px 30px;}
+
+    </style>
+
+
+
+</head>
+<body>
+    <!-- css here -->
+
+    
+<ALL class="ALL">
+    <div class ="box1">
+        <p class="LOGIN_text">로그인</p>    </div>
+
+    <div class="box2">
+
+       
+
+        <div class="box3">
+           <form method="get">
+                <div class="LOGIN_INPUT" id="idI">
+                    <label for="id">아이디<br></label>
+                    <input type="ID" id="id" name="id" title="아이디" size="100px"></div>
+                <div class="LOGIN_INPUT1" id="idP">
+                <label for="pw">비밀번호<br></label>
+                <input type="password" id="pw" name="pw" title="비밀번호" size="100px"></div>
+                <button type="submit" class="login_BTN" id="login_BTN"><span class="login_BTN_TEXT" id="login">로그인</span>
+            </button></form>
+    </div>
+
+</container>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- /* 픽셀의 디폴트값은 16px이다 */
+/* px : 픽셀사이즈의단위를나타낼때상수에붙여서사용 */
+/* em  상수와em을결합하여 픽셀유닛의 단위되는숫자를 곱한다 */
+/* % : 상대로잡은 태그에대한 상대크기 
+/*  글자로설정 : xx-small , x-small , small , medium , large,
+x-large , xx-large
+ex I {font-size : xx-large;} 
+16px*50% == 8px 
+16px*0.5em == 8px
+*/ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>글꼴관련스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>;
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Hi+Melody&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+    body{font-family: "맑은 고딕",돋움 , 굴림;}
+    h1{font-size: 64px;}
+    p{font-size: 32px;}
+    .font{
+        /* 글꼴예약어= [normal , not(normal)=[italic , oblique ,. ,..] ] */
+        font-style:italic;
+    }
+    .font_두께설정{
+        /* font-weight: ; */
+        font-weight:bold ;
+    }
+    .font_normal{
+        font-weight:normal;
+    }
+    @font-face {
+        font-family: 'nanum';   
+        src: url(../NanumPenScript-Regular.ttf)format('truetype');
+    }
+    /* \\\HTML,CSS,JavaScript\새 폴더\style.css */
+     *{font-family: 'Noto Sans KR';
+        font-size: 20px;}
+
+        .dokdo-regular{font-family: "Dokdo", system-ui;
+            font-weight: 400;
+              font-style: normal;}
+
+.notosanskr{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 레드향이라고 부른다</p>
+    <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+    <P>일반 귤보다 2~3배크고, 과육이 붉고 통통하다.</P>
+    <p class="dokdo-regular">폰트적용</p>
+
+    <p class="notosanskr">폰트</p>
+    
+</body>
+</html>

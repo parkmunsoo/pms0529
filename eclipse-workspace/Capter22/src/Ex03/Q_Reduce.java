@@ -1,0 +1,35 @@
+package Ex03;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Q_Reduce {
+
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+        int sum = numbers.stream()
+                .reduce(0, (s1, s2) -> s1 + s2);
+        					//s1과s2를 연산자사이로이동
+        System.out.println(sum); 
+        
+        
+        String[] strAtt = {"Java", "Stream", "API"};
+
+        String sA = Arrays.stream(strAtt)
+                //.reduce("Java", (s1, s2 ,s3) -> s1 + s2);
+        		//log s1 = s2, 한칸전진
+                .reduce("", (s1 ,s2 ) -> s1 + s2);
+        
+        System.out.println(sA);
+        
+        int a = 50;
+		//3. 리스트의 숫자를 모두 곱한 값 출력하기, 결과 : 750
+        // 5,10,15 -> 5*10*15
+        // 서로다른수사이의 곱연산자 a1,a2 -> a1*a2
+		List<Integer> numList = Arrays.asList(5,10,15);
+			int mult = numList.stream()
+			.reduce( 1 , (a1 ,a2)  -> a1*a2  );
+		System.out.println(mult);
+    }
+}

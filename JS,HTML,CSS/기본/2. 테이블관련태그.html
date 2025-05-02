@@ -1,0 +1,131 @@
+
+<!-- __ALL__ -->
+
+<!-- domain : html[row.5-row.12] -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 관련 태그 </title>
+      <caption>        선물용과 가정용 상품 구성</caption>
+
+    <!-- domain : css[] -->
+    <style>
+        table,th,td{
+            /* 외곽선 : -의굵기 , 에대해실선적용, - 의색상 */
+            border: 1px solid #ccc;
+            /* 외곽선이 겹칠 경우 하나로합치는 설정 */
+            border-collapse: collapse;
+        }
+        th , td { 
+            /* 내부여백 : N,S    E,W*/
+            padding: 10px 20px;
+        }
+    </style>
+ </head>
+ <body>
+    <!-- table is not cmmand -->
+     <!-- 표(table)  -->
+    <table>
+        <!-- tr태그 : 행(row) , 가로축 -->
+
+        <!-- thead , tbody는 실제기능없음; 자료구분할때사용 -->
+        <thead>   
+            <tr>
+        <!-- td태그 : 행과열이 교차한 두 면일때;  행과 열의 중첩면은 셀(cell)이다 , slot역할을한다-->
+        <!-- td태그 -> th태그 -->
+        <!-- th태그 : 테이블헤더 , 열의이름을 설정 -->
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- FIRST td1-td4] -->
+        <tr>
+        </tr>
+            <td>선물용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        <!-- SECONDE td1-td4] -->
+        <tr>
+            <td>선물용</td>
+            <td>5KG</td>
+            <td>18~26과</td>
+            <td>52,000원</td>
+        </tr>
+        <tr>
+            <td>가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>30,000원</td>
+        </tr>
+        <!-- THIRD td1-td4] -->
+        <tr>
+            <td>가정용</td>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>
+        </tr>
+         <!-- firth td1-td4] -->
+        </tbody>
+    </table>
+    
+
+
+
+    <!-- 달력코드자리[82-] -->
+    <table>
+            <caption>2025.03</caption>
+            <!-- [달력/첫줄] -->
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+            <!-- 날짜| 공휴일 혹은 비고란 -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1<br>삼일절</td>
+            </tr>
+            <!-- [달력/첫줄]마무리 -->
+
+            <!-- [달력/둘째줄] -->
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+            <!-- 날짜 | <br> 공휴일 혹은 비고란 -->
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8<br></td>
+            </tr>
+
+
+
+    </table>
+ </body>
+ </html>

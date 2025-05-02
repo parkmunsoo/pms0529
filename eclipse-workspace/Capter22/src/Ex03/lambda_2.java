@@ -1,0 +1,26 @@
+package Ex03;
+import java.util.Scanner; // java.util의 Scanner 클래스 import
+import java.util.*; // java.util에 있는 클래스 모두 import
+
+@FunctionalInterface
+interface Five {
+	void add2(int number);
+}
+
+
+
+public class lambda_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("해당하는 건물의 층을 알려주세요"); 
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성	
+		int number = sc.nextInt();	
+		Five five = (last_num2)	->{
+			int height = (last_num2 * 5);
+			System.out.println("해당건물의 높이는 "+height+" M입니다"); 
+		};
+		five.add2(number);
+		
+	}
+}

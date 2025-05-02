@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+.RB{
+            width: 100px; height: 20px;
+            background-color: red;
+            /* transition-property : 전환효과를 설정할 속성 */
+            transition-property: background-color,width;
+            /* transition-duration : 전환이 완료되는 걸리는 시간*/
+            transition-duration: 1s, 5000ms;
+            /* transition-delay : 변경되기전 대기시간을 설정 */
+            /* transition-delay: 1s; */
+
+        }
+        .RB:hover{
+            background-color: blue;
+            width: 500px;
+        }
+        .linear{transition-timing-function: linear;}
+        .ease{transition-timing-function:ease ;}
+        .ease-in{transition-timing-function:ease-in ;}
+        .ease-out{transition-timing-function: ease-out;}
+        .ease-in-out{transition-timing-function: ease-in-out;}
+        .transition{
+            width: 100px;
+            background-color: blue;
+            /* transition : property duration timing-func delay */
+            transition: width, 5s, linear, 1s;
+        }
+        .transition:hover{
+            width: 500px;
+        }
+    
+    </style>
+</head>
+<body>
+    <body>
+        <div class="RB linear">linear</div>
+        <div class="RB ease">ease</div>
+        <div class="RB ease-in">ease-in</div>
+        <div class="RB ease-out">ease-out</div>
+        <div class="RB ease-in-out">ease-in-out</div>
+        <div class="transition">transition</div>
+    
+    </body>
+</body>
+</html>

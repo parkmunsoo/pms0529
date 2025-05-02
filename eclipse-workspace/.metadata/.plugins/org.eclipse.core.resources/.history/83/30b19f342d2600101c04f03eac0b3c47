@@ -1,0 +1,24 @@
+package Ex03;
+import java.util.Scanner; // java.util의 Scanner 클래스 import
+import java.util.*; // java.util에 있는 클래스 모두 import
+
+@FunctionalInterface
+interface Five {
+	
+	void add2(int last_num2);
+}
+
+
+
+public class lambda_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성	
+				
+		Five five = (last_num2)	-> {
+		int number = sc.nextInt();
+		int height = (number * 5);
+		System.out.println(height);}
+	}
+}

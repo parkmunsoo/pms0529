@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인풋태그와 그 속성</title>
+</head>
+<!-- head,body -->
+<body>
+    <fieldset>
+        <legend>결제창</legend>
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>
+                    <label for="prod">주문상품</label>
+                                <!-- readonly -->
+                        <!-- [anable_read<=>disable_write] ); -->
+            <!-- 조회 및 주어진데이터의 값에대한 전송은가능하나, 주어진양식의값에대한 변경을 허용하지않음 -->
+                    <input type="text" id="prob" value="상품용 3kg" disabled  readonly>
+                </li>
+                <!-- li/form/input -->
+                <li>
+                    <form action="">
+                        <label for="user-name">이름</label>
+                        <!-- 내용에대한 양식을 기재하지않으면 에러메세지출력 및 값반환불능  -->
+                        <input type="text" id="user-name" autofocus required>
+                </form>
+                </li>
+                <!-- li/form/input  -->
+                <li>
+                    <label for="addr0">배송주소</label>
+                    <input type="text" id="adr"   size="30" maxlength="25" placeholder="예시;부산광역시 부산진구 OO동..">
+                </li>
+                <li>
+                    <label for="addr1">상세주소</label>
+                    <input type="text" id="adr1"   size="20" maxlength="15" placeholder="예시;00아파트 00동 00호..">
+
+                </li>
+                <!--  li/form/input  -->
+                <li>
+                    <label for="addr">연락처</label>
+                    <!-- disabled설정시 데이터전송불능 -->
+                    <input type="tel"  id="phone" placeholder=" -(하이픈)을 제외하고 입력하세요">
+                </li>
+                <!-- li/form/input  -->
+            </ul>
+        </fieldset>
+        <div>
+            <form action="" method="POST">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </form>
+        </div>
+    </body>
+</html>

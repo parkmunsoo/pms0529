@@ -1,0 +1,16 @@
+package pract_IO;
+
+import java.io.Serializable;
+
+public class Ex12_Unit implements Serializable{
+//	Serializable을 상속하면 serialVersionUID는 자동완성으로 작성하기
+	// serikalVersiomUID : 인스턴스의 주소
+	private static final long serialVersionUID = 1L;
+	private String name;
+	public Ex12_Unit(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+}

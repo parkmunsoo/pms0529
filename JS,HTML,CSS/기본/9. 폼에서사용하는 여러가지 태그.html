@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #conteiner{
+           width: 300px;
+             margin: 0;}  
+    </style>
+</head>
+
+    <!-- body -->
+<body>
+    <div id="conteiner"></div>
+        <fieldset>
+            <legend>전송내용 in 전송폼 </legend>
+        <form action="#">
+        <!-- textarea : 텍스트영역에 존재하는 행과열의 슬롯에대해 연장/축소가능 -->
+        <!-- cols : 가로크기  ;  set([x.min , x.max])-->
+        <!--rows : 세로크기;  set([y.min , y.max])-->
+        <textarea cols="20" rows="10" style="resize: none;" type="폼입니다"  name="textarea" id="prob" value="폼입니다">
+        
+        </textarea>
+                    <!--  resize ; 스와이프를통한 폼규격 연장/축소에대한 허용/비허용 설정옵션-->
+        <!-- select[] : 드롭다운리스트생성 -->
+         <!-- [option] : 드롭다운리스트를 경계로하는 내부데이터 -->
+        <br>
+        <!-- selected속성 :select에대한 초기값 -->
+             <select name="select" id="">
+                    <!-- VALUE를 기재함으로써 FORM제출이 속성의내부값을 가리킬수있다 -->
+                    <option value="none"selected>상품을 선택해주세요</option>
+                    <option value="real_data1"   >선물용1번</option>
+                    <option value="real_data2">선물용2번</option>
+                    <option value="real_data3">선물용3번</option>
+                    <option value="real_data4">선물용4번</option>
+                 </select>
+            <br>
+            <button>전송</button>
+        </form>
+        </fieldset>
+</body>
+    <!-- end_point -->
+</html>

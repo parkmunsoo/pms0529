@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let Fn = 0
+        let arr= []
+        let count = 0
+       while(Fn<100){
+        Fn = Fn + 5
+        count = count+1
+        arr = arr+"5의배수"+count+"번째"+","+"="+Fn+" , "
+       }
+       console.log(Fn);
+       console.log(arr);
+
+       for(let i=0; i<5; i++){
+            let star = "";
+            for(let j=0; j<=i; j++){
+                star+="*";
+            }
+            console.log(star);
+        }
+
+        // for(let ii=5; ii<0; ii--){
+        //     let star2 = "";
+        //     for(let jj=5; jj<=ii; jj--){
+        //         star2-="*";
+        //     }
+        //     console.log(star2);
+        // }
+let FIRSTAR = "*****"
+let LASTAR = "*"
+let STAR = []
+
+// while(FIRSTAR == LASTAR){
+//     STAR = + FIRSTAR
+//     console.log(STAR)
+//     FIRSTAR = FIRSTAR -LASTAR
+// }
+         // A배열의 평균을 출력하세요.
+let A = [70,60,55,75,95,90,80,80,85,100]
+let result = 0
+
+let n = A.length
+let B = 0
+while(n != 0){
+    n = n-1
+    B = B+A[n]
+}
+console.log(B/A.length)
+
+
+        //1900년도부터 2025년까지의 윤년을 출력해보자
+        // 윤년의 조건
+        // 400으로 나누어 나머지가 0이면 윤년입니다.
+        // 100으로 나누어 나머지가 0이면 윤년이 아닙니다.
+        // 4로 나누어 나머지가 0이면 윤년입니다.
+
+// let world_age_F = 1900
+// let world_age_L = 2025
+// let world_ages = []
+// let COUNT = 4
+// let L_intval_F = world_age_L - world_age_F
+// while(L_intval_F != 0 && L_intval_F%COUNT!=0){
+//     world_ages = world_ages +  (world_age_F + COUNT)
+//     console.log(world_ages)
+// }
+
+
+
+
+
+let a = 1900
+let b = 2025
+let intv = b-a
+
+
+while(intv%4 != 0){
+    intv = intv -1 
+}
+let intv_4Y = intv/4
+console.log(intv_4Y)
+let A_L = []
+let YL = intv_4Y.length
+	while(YL >= 0){
+		A = intv_4Y*4 
+        intv_4Y = intv_4Y-1
+        console()
+    }
+    </script>
+</body>
+</html>

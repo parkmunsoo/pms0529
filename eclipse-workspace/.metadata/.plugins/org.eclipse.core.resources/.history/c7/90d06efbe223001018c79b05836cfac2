@@ -1,0 +1,62 @@
+package Chapter23;
+import java.util.*;
+
+public class Ex_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, String> nations = new HashMap<String, String>(); 
+		nations.put("Korea", "서울");
+		nations.put("KOREA", "서울");
+		nations.put("kOREA", "서울");
+		nations.put("USA", "워싱턴");
+		nations.put("usa", "워싱턴");
+		nations.put("Usa", "워싱턴");
+		nations.put("England", "런던");
+		nations.put("england", "런던");
+		nations.put("ENGLAND", "런던");
+		nations.put("FRANCE", "파리");
+		nations.put("France", "파리");
+		nations.put("france", "파리");
+
+		//nations.get(  , "해당결과가 존재하지않습니다");
+	
+		
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성
+		String Input_data = sc.nextLine();
+		String nations_Cheak = nations.get(Input_data);
+
+		if(nations.containsKey(Input_data)) {
+		System.out.println( Input_data+ "의 수도는" +" "+  nations_Cheak + "입니다" );}
+		else {
+			System.out.println("해당결과가 존재하지않습니다");}
+		
+		
+		Vector<Integer>raining = new Vector<>();
+		
+		
+		
+		//출력할거 1	요소들 , 2	요소들산술평균 3	0입력시종료
+		
+		while(true) {
+			int input_data3 = sc.nextInt();
+			if(input_data3 == 0) {
+				break;
+			}
+			
+			
+			raining.add(input_data3);	//요소개수만큼 나눠야 평균이나옴
+			int raining_avg = 0;
+			for(int i = 0; i<raining.size(); i++ ) {
+				raining_avg += raining.get(i);
+				System.out.println("수집된 강수량의 데이터에서"+ i +"번째 데이터는" + raining_avg +"입니다");
+
+			}
+			raining_avg = raining_avg / raining.size();
+			System.out.println("현재 수집된 강수량의 데이터에 대한 평균은" + raining_avg +"입니다");
+		}
+		
+	}
+}
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트관련파일</title>
+    <style>
+        /* start,end는 언어별로 정렬방식이다르다 */
+        .p1{text-align: start;}
+        /* left와right와 결합된 구문은 고정된지점을지닌다 */
+        .p2{text-align: left;}
+        .p3{text-align: center;}
+        .p4{text-align: right;}
+        .p5{text-align: end;}
+
+        /* lene-height : 줄높이설정가능 */
+        .p1{line-height: 2.0;}
+        .p2{line-height: 2.0;}
+        .p3{line-height: 2.0;}
+        .p4{line-height: 2.0;}
+        .p5{line-height: 2.0;}
+
+/* 글자를 세로 중앙으로 정렬하는 방법 */
+        /* heigh(세로크기) ,*/
+        /* line-height(줄간격) 두개를 똑같은 값으로 설정 */
+        .padding{
+            width: 500px;
+            height:500px;
+            line-height:500px;
+            background-color: #222;
+            color: white;
+            text-align:center ;
+            font-size:40px ;
+        }
+        /* text-decoration : 글자위에 윗줄,밑줄,취소선을 그리게해주는 속성 */
+        .underline{text-decoration:underline ;}
+        .overline{text-decoration:overline ;}
+        .line-throws{text-decoration:line-through ;}
+
+
+/* 기존의예약어를 나만의예약어로변경하기*/
+        .atag{color: black;
+            text-decoration : none;
+        }
+
+/* hOver is cheak(커서_event) */
+        .atag:hover{
+                color: red;
+                text-decoration: underline;
+                font-weight: bold;
+        }
+/* word[min,max] : text-shadow[1,3] */
+        .shadow1{color: red; text-shadow: 10px 10px black;}
+        /* 가로거리 / 세로거리 /번짐정도 / 색상 */
+        .shadow2{text-shadow:5px 5px 3px #ffa500 ;}
+        .shadow3{color: white; text-shadow: 7px -7px 20px #000;}
+        .trans1{text-transform : capitalize}
+        .trans2{text-transform : uppercase}
+        .trans3{text-transform : lowercase}
+/*_____________________________spacing_____________________________________ */
+        .spacing_css1{letter-spacing: 10px;}
+        .spacing_css2{letter-spacing: 20px;}
+        .spacing_js1{letter-spacing: 10px;}
+        .spacing_js2{letter-spacing: 300px;}
+
+
+    </style>
+</head>
+<body>
+    <P>none</P>
+
+    <p class="spacing_css1">css</p>
+    <p class="spacing_css2">css</p>
+    <p class="spacing_js1">java script</p>
+    <p class="spacing_js2">java script</p>
+
+    <p class ="underline shadow1 trans1">under</p>
+    <p class ="overline shadow2 trans2">over</p>
+    <p class="line-throws shadow3 trans3">line</p>
+    <a href="#" class="atag">atag</a>
+
+    <p class="heading">HTML</p>
+
+    <p class="p1">LEFT_TOP</p>
+    <p class="p2">LEFT_HIGH</p>
+    <p class="p3">CENTER</p>
+    <p class="p4">RIGHT_LOW</p>
+    <p class="p5">RIGHT_BOTTOM</p>
+    <p class="p1">껍질에 붉은 빛이 돌아 레드향이라고 불린다, 레드향은 한라봉과 귤을 교배한것으로 비타민 c와 비타민 P가 풍부해 혈액순환,감기예방 등에 좋은 것으로 알려져 있다</p>
+    <p class="p2">껍질에 붉은 빛이 돌아 레드향이라고 불린다, 레드향은 한라봉과 귤을 교배한것으로 비타민 c와 비타민 P가 풍부해 혈액순환,감기예방 등에 좋은 것으로 알려져 있다</p>
+    <p class="p3">껍질에 붉은 빛이 돌아 레드향이라고 불린다, 레드향은 한라봉과 귤을 교배한것으로 비타민 c와 비타민 P가 풍부해 혈액순환,감기예방 등에 좋은 것으로 알려져 있다</p>
+    <p class="p4">껍질에 붉은 빛이 돌아 레드향이라고 불린다, 레드향은 한라봉과 귤을 교배한것으로 비타민 c와 비타민 P가 풍부해 혈액순환,감기예방 등에 좋은 것으로 알려져 있다</p>
+    <p class="p5">껍질에 붉은 빛이 돌아 레드향이라고 불린다, 레드향은 한라봉과 귤을 교배한것으로 비타민 c와 비타민 P가 풍부해 혈액순환,감기예방 등에 좋은 것으로 알려져 있다</p>
+    <p class="padding">HTML</p>
+
+
+
+
+</body>
+</html>

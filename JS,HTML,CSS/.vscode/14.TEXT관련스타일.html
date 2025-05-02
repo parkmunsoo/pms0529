@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 폰트사이트 -->
+<!-- https://fontawesome.com/search?q=DOOR&o=r&s=solid&ip=classic -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 관련 스타일</title>
+    <style>
+        /* color : 글자 색상 변경 */
+        .p1{color: blue;}
+        .p2{color: aqua;}
+        .p3{color: red;}
+        /* 색상설정에서의 두가지방식 */
+        /* 1.   글자로 색상을 설정하는 방식 : BLUE , RED ,GREEN */
+        /* 2.   16진수로 설정하는 방식: #16진수두자리 */
+                /* [0-10,A-F] */ 
+                /* #000000 / #ffffff */
+        .p4{color : #166aea;}
+        /* 3.  RGB형식 : rgb(red 0~255 , green 0~255 , blue 0~255)  */
+        .p5{background-color : rgb(red, green, rgb(150, 220, 65));}
+        /*  4.  RGBA형식 : rgba(red,green,blue,alpha) */
+        .p6{background-color : rgba(255, 100, 50, 0.1)}
+        body{background-image: url(../bg_grid2.gif) ;}
+        .pp1{color: aquamarine;
+            background-color: black; }
+        /* 5.  hs1(색상,채도,명도) */
+        /* 6.  hsla(색상,채도,명도,투명도) */
+        .pp2{color: #ffffff}
+    </style>
+</head>
+<body>
+    <p class="p1">HTML</p>
+    <p class="p2">CSS</p>
+    <p class="p3">JavaScript</p>
+    <p class="p4">불루</p>
+    <p class="p5">AAAA</p>
+    <p class ="p6">BBBB</p>
+    <p class ="pp1">CCCC</p>
+    <p class = "pp2">DDDD</p>
+</body>
+</html>

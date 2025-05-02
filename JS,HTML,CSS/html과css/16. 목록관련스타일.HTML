@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록관련스타일</title>
+    <style>
+        /* outside : 기본값/들여쓰기가 다른값을가질때의 기본값 */
+        /* insede : 들여쓰기  */
+        .book0{
+            list-style-type: none;
+        }
+        .book20{
+            list-style-type: upper-alpha;
+            list-style-position: outside;
+        }
+        .book10{
+            list-style-type: lower-alpha;
+        }
+        .book4{
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        .book_IMG{
+            list-style-image: url(./dot.png);
+        }
+    </style>
+</head>
+<body>
+<h1>   </h1>
+    <ul>
+        <li class="book0">DO it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>나도된다 시리즈</li>
+    </ul>
+    <ol>
+        <li>do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ol>
+    <ul class="book_IMG">
+        <li >do it! 시리즈</li>
+        <li >첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+    <ul>
+        <li class="book_IMG">do it! 시리즈</li>
+        <li >첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+    <ul class="book4">
+        <li class="book_IMG">do it! 시리즈</li>
+        <li >첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+    <ul class="book20">
+        
+    </ul>
+</body>
+</html>

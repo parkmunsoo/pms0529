@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31.가위바위보 게임</title>
+    <style>
+        body{background-color: #F8F9FB;}
+        #wrap{
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .centerArea{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* .imgArea{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="centerArea">
+            <h3>win</h3>
+            <p>VS</p>
+            <div>
+                <button id="btn1">✌</button>
+                <button id="btn2">👊</button>
+                <button id="btn3">🖐</button>
+                <id="computer"></id>
+            </div>
+           // document.querySelector("#")
+        <div class="imgArea">
+            <img src="./바위.png" alt="computer"><p>바위</p> </div>
+        <div>
+            <img src="./보.png" alt="computer"> <p>보</p>
+        </div>
+        <div><img src="./가위.png" alt="computer"><p>가위</p>
+        </div>
+    </div>
+    <script>
+
+        const computer = Math.floor(Math.random()*3);
+       // computer.onload
+        const btn1 = document.querySelector("button");
+        const btn2 = document.querySelector("button");
+        const btn3 = document.querySelector("button");
+        btn1.addEventListener("click", function(){
+            alert("가위");
+        });
+        btn1.getelementbyid(computer) 
+
+        btn2.addEventListener("click", function(){
+            alert("바위");
+        });
+        btn3.addEventListener("click", function(){
+            alert("보");
+        });
+
+        btn1.getelementbyid()
+
+
+        
+        btn1.onload = (e) => computer
+                    e.target.result;
+     
+
+
+        
+        btn1.addEventListener("click", handleBtn3Click);
+
+
+        user.onload
+        // 버튼을 눌렀을때 왼쪽의 이미지가 버튼에 맞게 변하도록
+        // 컴퓨터가 랜덤으로 가위,바위,보 중에 하나를 설정하도록 
+        // 0~2까지의 랜덤값 저장 (0:가위, 1:바위, 2:보)
+        // 사람과 컴퓨터의 값을 비교하여 승패를 설정하도록
+
+
+
+    </script>
+
+</body></html>

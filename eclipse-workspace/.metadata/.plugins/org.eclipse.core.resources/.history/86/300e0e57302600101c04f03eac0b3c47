@@ -1,0 +1,17 @@
+package Ex03;
+import java.util.Scanner; // Import Scanner class
+
+@FunctionalInterface
+interface YValue {
+    int cac(int number);
+}
+
+public class Lambda2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        YValue y_number = (x) -> x * x - 3 * x + 7; 
+        System.out.print("x에 해당하는 값을 입력해주세요");
+        int num = sc.nextInt(); 
+        System.out.println("y = " + y_number.cac(num)); 
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 250px;
+            height: 100px;
+            margin: 10px;}
+            /* border-style:외곽선의 종류를 설정할때 사용하는 속성 */
+            /* border-style이 공역일때 값으로써 쓸수있는 정의역은 [[solid][dashed][dotted][double]] */
+            /* border-color이 공역일때 값들은 서로다른 색상을 지정하는데쓸수있다 */
+        .box0{border-style:solid;  border-width: 2px; }
+        .box1{border-style:dashed; border-width: 4px; border-color: red;}
+        .box2{border-style: dotted; border-width: 6px; border-color: blue;}
+        .box3{border-style: double;  border-width: 8px; border-color: gray;}
+        .box4{border: 5px solid yellow; border-radius: 10px;}
+        .box4:hover{border-style:dashed;
+                                /* LT , RT , LB , RB */
+                    /* border-radius: 10px 20px 30px 40px; */
+                    border-radius: 55px 10px/ 55px 10px;}
+        img{border-radius: 50%;}
+    </style>
+</head>
+<body>
+    
+    <div class="box0">BOX0</div>
+    <div class="box1">BOX1</div>
+    <div class="box2">BOX2</div>
+    <div class="box3">BOX3</div>
+    <div class="box4">BOX4</div>
+    <img src="../images/salad.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27. hover 및 전환효과 스타일</title>
+    <style>
+        .nth{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* property에대한 transition제공 */
+            transition-property: background-color, width;
+            transition-duration: 1s, 500ms;
+            transition-delay: 2s;
+        }
+        /* RED_BOX에대한 잠재된색상, 커서를 올리면 색상이드러난다 */
+        .RED_BOX:hover .bar{background-color: rgb(0, 42, 255); width: 300px;}
+
+        .bar:nth-child(1){transition-timing-function:linear;}
+        .bar:nth-child(2){ transition-timing-function:ease;}
+        .bar:nth-child(3){transition-timing-function:ease-in;}
+        .bar:nth-child(4){transition-timing-function:ease-out ;}
+        .bar:nth-child(5){transition-timing-function:ease-in-out ;}
+
+        .container:hover .bar{        
+         width: 10px;   
+         transition-property:width;
+         transition-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nth">linear</div>
+        <div class="RED_BOX"></div>
+        <div class="RED_BOX_e_I"></div>
+        <div class="RED_BOX_e_O"></div>
+        <div class="RED_BOX_e_IO"></div>
+    </div>
+</body>
+</html>

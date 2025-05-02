@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>회원 가입을 환영합니다</h1>
+    <form action="#" method="GET">
+        <input type="time" name="tome">
+        <input type="datetime-local" name="datetime-local">
+        <input type="submit" value="전송">
+
+    <form action="#" method="GET">
+        <input type="date" name="date">
+        <input type="week" name="week">
+        <input type="month" name="month">
+        <input type="submit" value="전송">
+    </form>
+    <form action="#">
+        <input type="number" name= "num" min="2" max="10" step="2">
+        <input type="range" name= "ran" min="2" max="10" step="2">
+        <input type="submit" value="전송">
+        <!--로그인정보필드 in 중간필드 -->
+        <fieldset>
+            <legend>사용자정보</legend>
+            <!-- ul구간 -->
+            <ul>
+                <li><label>아이디<input type="id" name="id"></label></li>
+                <li><label>이메일<input type="email" name="email"></label></li>
+                <li><label>비밀번호<input type="pw" name="pw"></label></li>
+                <li><label>비밀번호 확인<input type="pw" name="pw"></label> </li>
+            </ul>
+        </fieldset>
+        <!-- 메일_체크박스 in 하단필드 -->
+        <fieldset>
+            <legend>이벤트와 새로운소식</legend>
+            <label><input type="radio" name="mail" value="yes">메일수신</label>
+            <label><input type="radio" name="mail" value="no">메일수신안함</label>
+        </fieldset>
+        <!-- 버튼 in 최하단필드-->
+        <input type="submit" value="가입하기">
+        <input type="submit" value="취소">
+    </form>
+</body>
+</html>

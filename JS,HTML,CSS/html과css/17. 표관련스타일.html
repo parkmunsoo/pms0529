@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표관련스타일</title>
+
+
+    <style>
+        /* solid : 실선 */
+        /* dotted : 점선 */
+        /* dashed : 절취선  */
+        th,td{
+            border: 1px dashed black;
+            padding: 10px;
+            text-align: center;
+            border : 
+        }
+        table{
+            caption-side: bottom;
+            border:1px solid black;
+            /* 셀 간의 간격 설정 : N가로px,M세로px  */
+            /* 하나만기재시 L(가로px,세로px) */
+            border-spacing: 50px 5px;
+            /* 셀 테두리를 합쳐주는 설정 */
+            /* separate가 기본값인 태그인 border-collapse에서 collapse는 테이블 및 분류형의 테두리를 합쳐준다*/
+            border-collapse: collapse;
+        }
+        table_TOP{
+            caption-side: top;
+        }
+        table_BOT{
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h2>상품구성</h2>
+    <table class="table_BOT">
+        <caption>선물용과 가정용 상품구성</caption>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <th rowspan="2">선물용</th>
+            <td> 3kg</td>
+            <td> 11과~16과</td>
+            <td> 35,000원</td>
+        </tr>
+        <tr>
+            <th rowspan="1">가정용</th>
+            <td> 3kg</td>
+            <td> 11과~16과</td>
+            <td> 35,000원</td>
+      
+        </tr>
+    </table>
+    
+</body>
+</html>

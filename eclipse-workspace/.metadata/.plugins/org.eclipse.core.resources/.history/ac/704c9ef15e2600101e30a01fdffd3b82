@@ -1,0 +1,18 @@
+package Ex03;
+
+import java.util.Arrays;
+
+public class Q_Reduce {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+		int List = numbers.stream()
+//		         기본값    첫번째, 두번째
+		.reduce(1, ( s1,    s2 ) - > System.out.println(numbers)
+
+
+	}
+
+}

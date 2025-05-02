@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin 관련 스타일</title>
+    <style>
+        /* margin 관련 스타일 */
+        /* 바깥여백 ,여러태그들을 개개의태그들로 서로구분가능하게 간격정하여 배치할수있게한다 */
+       
+       /* n&px(a , not(a)) */
+       /* n&px(b , not(b)) */
+       /* n&px(a , b ,not(a)  , not(b)) */
+
+       /*  if first_argu is a :
+            second_argu is not(first_argu) */
+       /*10m1n&px(TOP =a  , RIGHT =b,   BOT = not(a)) , LEFT = not(b)) */
+       /* 처음자리: 처음요소/ 둘째자리 : 처음요소의부정요소(왼요소 -> 오른요소) 혹은 다른관계(수직->수평) ,,,  */
+        div{
+            /* 10px(TOP,BOT) */
+            margin: 10px;
+            /* 10px(TOP,BOT) 20px(LEFT,RIGHT) */
+            margin: 10px 20px ;
+            /* 10px(TOP) 20px(LEFT,RIGHT) 30px(BOT) */
+            margin: 10px 20px 30px;
+            /* 10px(TOP) 20px(RIGHT) 30px(BOT) 40px(LEFT) */
+            margin: 10px 20px 30px 40px;
+        }
+        /* margin이 중복선언된경우 {(크기에 대응되는 상수를기준으로)=>(큰상수가 적용된다 -> 큰크기가적용된다)} */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
